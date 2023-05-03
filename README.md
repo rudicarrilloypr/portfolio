@@ -117,7 +117,7 @@ To deploy use your favorite method
 
 - GitHub: [@rudicarrilloypr](https://github.com/rudicarrilloypr)
 - Twitter: [@onlyargo](https://twitter.com/onlyargo)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/rudi-carrillo-957964249/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/rudi-carrillo/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

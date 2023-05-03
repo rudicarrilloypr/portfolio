@@ -1,26 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <navbar>
-        <img src = .assets/hamb.png ></img>
-    </navbar>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rodolfo Carrillo's portfolio</title>
+  </head>
+  <body>
+    <div class="header">
+      <header>
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
 
-    <header> <h1>Hey there.
-        I'm Rodolfo.</h1></header>
-        <h2> I'm a software developer</h2>
-        <main>
-        <h3>I can help you build a product, feature or website Look through some of my work and experience!
-            If you like what you see and have a project you need coded, don't hesitate to contact me</h3> </main>
-        <p></p>
-     
+        <nav class="burger">
+          <div class="burger-line top"></div>
+          <div class="burger-line mid"></div>
+          <div class="burger-line bot"></div>
+        </nav>
+      </header>
+    </div>
 
-   
-</body>
+    <section id="main">
+      <div class="main">
+        <h1>
+          Hey there. <br />
+          I'm Rodolfo. <br />
+          <span>I'm a software <br />developer</span>
+        </h1>
+
+        <p>
+          I can help you build a product, feature or website, look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hesitate to contact me.
+        </p>
+
+        <div class="main__social-media">
+          <ul>
+            <li>
+              <a href="https://twitter.com/onlyargo"
+                ><img src="./assets/twitter.png" alt="Twitter logo"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/rudi-carrillo/"
+                ><img src="./assets/linkedin.png" alt="LinkedIn logo"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/medium.png" alt="Medium logo"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/rudicarrilloypr"
+                ><img src="./assets/github.png" alt="GitHub logo"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/angellist.png" alt="AngelList logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main__arrow-button">
+          <a href="#projects"
+            ><img
+              src="./assets/disabled.png"
+              alt="A rounded button with a black-down-arrow"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+  <!-------PROJECTS SECTION ------->
+
+  <section id="projects">
+    <div class="projects">
+      <h2 class="projects__title">
+        My Recent <span class="span__br"><br /></span>Works
+      </h2>
+      <div class="projects__h2-icon"></div>
+
+      <div class="projects__wrapper">
+        <article class="project__card card1">
+            <img src="./assets/producer1.png" alt="producer page demo" srcset="" />
+
+          <div class="project__card__description">
+            <h3 class="project__card__title">
+              Multi-Post Stories <br />
+              Gain+Glory
+            </h3>
+
+            <ul class="project__card__tags">
+              <li>Ruby on Rails</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+            </ul>
+
+            <button class="project__card__button" type="button">
+              <a href="">See Project</a>
+            </button>
+          </div>
+        </article>
+
+        <article class="project__card card2">
+            <img src="./assets/photographer1.png" alt="photographer page demo" srcset="" />
+
+          <div class="project__card__description">
+            <h3 class="project__card__title">
+              Multi-Post Stories <br />
+              Gain+Glory
+            </h3>
+
+            <ul class="project__card__tags">
+              <li>Ruby on Rails</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+            </ul>
+
+            <button class="project__card__button" type="button">
+              <a href="">See Project</a>
+            </button>
+          </div>
+        </article>
+
+        <article class="project__card card3">
+            <img src="./assets/photographer2.png" alt="photographer page demo 2" srcset="" />
+
+          <div class="project__card__description">
+            <h3 class="project__card__title">
+              Multi-Post Stories <br />
+              Gain+Glory
+            </h3>
+
+            <ul class="project__card__tags">
+              <li>Ruby on Rails</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+            </ul>
+
+            <button class="project__card__button" type="button">
+              <a href="">See Project</a>
+            </button>
+          </div>
+        </article>
+
+        <article class="project__card card4">
+            <img src="./assets/designer1.png" alt="designer page demo" srcset="" />
+
+          <div class="project__card__description">
+            <h3 class="project__card__title">
+              Multi-Post Stories <br />
+              Gain+Glory
+            </h3>
+
+            <ul class="project__card__tags">
+              <li>Ruby on Rails</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+            </ul>
+
+            <button class="project__card__button" type="button">
+              <a href="">See Project</a>
+            </button>
+          </div>
+        </article>
+
+        <article class="project__card card5">
+            <img src="./assets/designer2.png" alt="designer page demo 2" srcset="" />
+
+          <div class="project__card__description">
+            <h3 class="project__card__title">
+              Multi-Post Stories <br />
+              Gain+Glory
+            </h3>
+
+            <ul class="project__card__tags">
+              <li>Ruby on Rails</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+            </ul>
+
+            <button class="project__card__button" type="button">
+              <a href="">See Project</a>
+            </button>
+          </div>
+        </article>
+
+        <article class="project__card card6">
+            <img src="./assets/team1.png" alt="basketball team demo" srcset="" />
+
+          <div class="project__card__description">
+            <h3 class="project__card__title">
+              Multi-Post Stories <br />
+              Gain+Glory
+            </h3>
+
+            <ul class="project__card__tags">
+              <li>Ruby on Rails</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+            </ul>
+
+            <button class="project__card__button" type="button">
+              <a href="">See Project</a>
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  </body>
 </html>
