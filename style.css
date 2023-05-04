@@ -324,7 +324,7 @@ button a {
   justify-content: center;
   background-image:
     url("./assets/about-left-mobile.png"),
-    url("./assets/about-right.mobile.png");
+    url("./assets/about-right-mobile.png");
   background-repeat: no-repeat;
   background-size: 17%, 17%;
   background-position: bottom left, top right;
