@@ -418,7 +418,7 @@ button a {
   align-items: flex-start;
   justify-content: center;
   gap: 24px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .contact__container h2 {
@@ -469,8 +469,7 @@ button[type="submit"] {
   margin: 0 auto;
   padding: 0 12px;
   cursor: pointer;
-  color: #FFFFFF;
-
+  color: #fff;
 }
 
 input[type="text"],
