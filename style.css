@@ -57,14 +57,11 @@ body {
   background-color: var(--color-white);
 }
 
-
 header ul {
-
   display: none;
 }
 
 .burger {
-
   width: 18px;
   height: 12px;
   margin-top: 25px;
@@ -72,7 +69,6 @@ header ul {
   align-self: flex-start;
   display: flex;
   flex-direction: column;
-
   justify-content: space-around;
   box-sizing: border-box;
   cursor: pointer;
@@ -106,7 +102,6 @@ header ul {
   background-color: var(--color-white);
 }
 
-
 .main__container {
   display: flex;
   flex-direction: column;
@@ -115,7 +110,7 @@ header ul {
 }
 
 .main h1 {
-    margin-top: 5%;
+  margin-top: 5%;
   font-style: normal;
   font-weight: 700;
   font-size: 4rem;
@@ -225,7 +220,8 @@ h2,
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
-  row-gap: 32px;}
+  row-gap: 32px;
+}
 
 .project__card {
   width: 327px;
@@ -342,8 +338,6 @@ button:active {
   background-color: var(--color-white);
 }
 
-
-
 .about-me__container {
   width: 100vw;
   max-width: var(--sections-max-width);
@@ -401,11 +395,10 @@ button:active {
   box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
-.about-me__icon__holder img {
+/* .about-me__icon__holder img {
   /* height: 0%; */
 
 /* width: 10%;} */
-}
 
 .about-me__card__title {
   margin-bottom: 10px;
@@ -449,7 +442,6 @@ button:active {
   align-items: flex-start;
   justify-content: center;
   gap: 24px;
-
 }
 
 .contact__container h2 {
@@ -459,7 +451,6 @@ button:active {
 .desktop__form {
   display: none;
 }
-
 
 .contact__form {
   width: 90%;
