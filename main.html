@@ -14,8 +14,9 @@
     <title>Rudi Carrillo's portfolio</title>
   </head>
   <body>
-    <div class="header">
+        <!-------HEADER ------->
       <header>
+        <div class="header">
         <ul>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">About</a></li>
@@ -27,20 +28,24 @@
           <div class="burger-line mid"></div>
           <div class="burger-line bot"></div>
         </nav>
+      </div>
       </header>
-    </div>
+    
 
-    <section id="main">
-      <div class="main">
-        <h1>
-          Hey there. <br />
-          I'm Rodolfo. <br />
-          <span>I'm a software <br />developer</span>
+  <!-------MAIN SECTION ------->
+  <section id="main">
+    <div class="main">
+      <div class="main__container">
+        <h1 class="intro">
+          Hey there. <span class="span__br"><br /></span>I'm Rodolfo.
         </h1>
+        <span class="h1__sub">I'm a software developer</span>
+
         <p>
-          I can help you build a product, feature or website, look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don’t hesitate to contact me.
+          I can help you build a product, feature or website Look through some
+          of my work and <span class="span__br2"><br /></span> experience! If
+          you like what you see and have a project you need coded,
+          <span class="span__br2"><br /></span>don’t hesitate to contact me.
         </p>
 
         <div class="main__social-media">
@@ -94,7 +99,9 @@
 
       <div class="projects__wrapper">
         <article class="project__card card1">
-            <img src="./assets/producer1.png" alt="producer page demo" srcset="" />
+          <picture class="project__card__picture">
+            <img src="./assets/producer1.png" alt="" srcset="" />
+          </picture>
 
           <div class="project__card__description">
             <h3 class="project__card__title">
@@ -116,7 +123,9 @@
         </article>
 
         <article class="project__card card2">
-            <img src="./assets/photographer1.png" alt="photographer page demo" srcset="" />
+          <picture class="project__card__picture">
+            <img src="./assets/photographer1.png" alt="" srcset="" />
+          </picture>
 
           <div class="project__card__description">
             <h3 class="project__card__title">
@@ -138,7 +147,9 @@
         </article>
 
         <article class="project__card card3">
-            <img src="./assets/photographer2.png" alt="photographer page demo 2" srcset="" />
+          <picture class="project__card__picture">
+            <img src="./assets/photographer2.png" alt="" srcset="" />
+          </picture>
 
           <div class="project__card__description">
             <h3 class="project__card__title">
@@ -160,7 +171,9 @@
         </article>
 
         <article class="project__card card4">
-            <img src="./assets/designer1.png" alt="designer page demo" srcset="" />
+          <picture class="project__card__picture">
+            <img src="./assets/designer1.png" alt="" srcset="" />
+          </picture>
 
           <div class="project__card__description">
             <h3 class="project__card__title">
@@ -182,7 +195,9 @@
         </article>
 
         <article class="project__card card5">
-            <img src="./assets/designer2.png" alt="designer page demo 2" srcset="" />
+          <picture class="project__card__picture">
+            <img src="./assets/designer2.png" alt="" srcset="" />
+          </picture>
 
           <div class="project__card__description">
             <h3 class="project__card__title">
@@ -204,7 +219,9 @@
         </article>
 
         <article class="project__card card6">
-            <img src="./assets/team1.png" alt="basketball team demo" srcset="" />
+          <picture class="project__card__picture">
+            <img src="./assets/team1.png" alt="" srcset="" />
+          </picture>
 
           <div class="project__card__description">
             <h3 class="project__card__title">
@@ -230,7 +247,7 @@
 
     <!------- ABOUT ME SECTION ------->
 
-    <section id="about-me">
+    <section id="about">
       <div class="about-me">
         <div class="about-me__container">
           <h2>About Me</h2>
@@ -251,7 +268,11 @@
           <article class="about-me__card__container languages">
             <div class="about-me__languages">
               <div class="about-me__icon__holder">
-                <img src="./assets/worldicon.png" alt="World vectorized icon" srcset="" />
+                <img 
+                src="./assets/worldicon.png" 
+                alt="World icon" 
+                srcset="" 
+                />
               </div>
               <h3 class="about-me__card__title">Languages</h3>
 
@@ -267,7 +288,11 @@
           <article class="about-me__card__container frameworks">
             <div class="about-me__languages">
               <div class="about-me__icon__holder">
-                <img src="./assets/squaresicon.png" alt="Five squares icon" srcset="" />
+                <img 
+                src="./assets/squaresicon.png" 
+                alt="Five squares icon" 
+                srcset="" 
+                />
               </div>
               <h3 class="about-me__card__title">Frameworks</h3>
 
@@ -284,7 +309,11 @@
           <article class="about-me__card__container skills">
             <div class="about-me__languages">
               <div class="about-me__icon__holder">
-                <img src="./assets/thundericon.png" alt="Thunder icon" srcset="" />
+                <img 
+                src="./assets/thundericon.png" 
+                alt="Thunder icon" 
+                srcset="" 
+                />
               </div>
               <h3 class="about-me__card__title">Skills</h3>
 
@@ -300,48 +329,49 @@
         </div>
       </div>
     </section>
-    <!-------CONTACT SECTION ------->
-    <section id="contact">
+
+     <!-------CONTACT SECTION ------->
+     <section id="contact">
       <div class="contact">
         <div class="contact__container">
           <h2>
             I'm always interested in hearing about new projects, so if you'd
-            like to chat please get in touch
+            like to chat please get in touch.
           </h2>
 
           <form
-            class="contact__form"
+            class="contact__form mobile__form"
             action="https://formspree.io/f/mgebdlbl"
             method="POST"
           >
             <ul>
-              <li class="contact__form__element full-name">
+              <li class="contact__form__element full-name required-mobile">
                 <label class="label" for="full-name">Full Name:</label>
                 <input
                   type="text"
                   id="full-name"
                   name="full-name"
-                  placeholder="Full Name"
+                  placeholder="Full name"
                   maxlength="30"
                   required
                 />
               </li>
 
               <li class="contact__form__element email">
-                <label class="label" for="email">Email Address:</label>
+                <label class="label" for="email-mobile">Email Address:</label>
                 <input
                   type="email"
-                  id="email"
+                  id="email-mobile"
                   name="email"
-                  placeholder="Email Address"
+                  placeholder="Email address"
                   required
                 />
               </li>
 
               <li class="contact__form__element message">
-                <label class="label" for="message">Your Message:</label>
+                <label class="label" for="message-mobile">Your Message:</label>
                 <textarea
-                  id="message"
+                  id="message-mobile"
                   name="message"
                   placeholder="Hey I'd like to connect to..."
                   maxlength="500"
@@ -351,8 +381,69 @@
             </ul>
 
               <button type="submit">
-                Get in Touch
+                Get in touch!
               </button>
+          </form>
+
+          <form
+                  class="contact__form desktop__form"
+                  action="https://formspree.io/f/mgebdlbl"
+                  method="POST"
+          >
+            <ul>
+
+              <li class="contact__form__element name">
+                <label class="label" for="firstname">First Name:</label>
+                <input
+                        type="text"
+                        id="firstname"
+                        name="firstname"
+                        placeholder="First Name"
+                        maxlength="30"
+                        pattern="[a-zA-Z]+"
+                        required
+                />
+              </li>
+
+              <li class="contact__form__element lastname">
+                <label class="label" for="lastname">Last Name:</label>
+                <input
+                        type="text"
+                        id="lastname"
+                        name="lastname"
+                        placeholder="Last Name"
+                        maxlength="30"
+                        pattern="[a-zA-Z]+"
+                        required
+                />
+              </li>
+
+              <li class="contact__form__element email">
+                <label class="label" for="email">Email Address:</label>
+                <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email Address"
+                        required
+                />
+              </li>
+
+              <li class="contact__form__element message">
+                <label class="label" for="message">Your Message:</label>
+                <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Hey I'd like to connect to..."
+                        maxlength="500"
+                        required
+                ></textarea>
+              </li>
+            </ul>
+
+            <button type="submit">
+              Get in touch!
+            </button>
           </form>
 
           <p class="contact__container__email">myemailhere@email.com</p>
@@ -360,6 +451,7 @@
       </div>
     </section>
 
+ <!-------CONTACT SECTION ------->
     <footer>
       <div class="footer">
         <div class="main__social-media footer__social-media">
@@ -393,7 +485,5 @@
         </div>
       </div>
     </footer>
-  </body>
-</html>
   </body>
 </html>
