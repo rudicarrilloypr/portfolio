@@ -672,7 +672,7 @@ footer {
   button[type="submit"] {
     justify-content: flex-start;
     margin: 0 auto 15% 0;
-}
+  }
 
   .contact__container__email {
     display: none;
