@@ -625,8 +625,22 @@ footer {
 
   .about-me__description {
     width: 68vw;
+    animation-duration: 3s;
+    animation-name: slidein;
   }
 
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
   .skills {
     grid-area: 2/1/3/3;
   }
