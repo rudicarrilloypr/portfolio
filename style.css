@@ -46,7 +46,7 @@ body {
 /* ----- HEADER SECTION ----- */
 
 .header {
-  width: 100vw;
+  width: 100%;
   max-width: var(--sections-max-width);
   height: 5vh;
   min-height: 60px;
@@ -87,7 +87,7 @@ header ul {
 }
 
 .main {
-  width: 100vw;
+  width: 100%;
   max-width: var(--sections-max-width);
   min-height: 770px;
   margin: auto;
@@ -182,7 +182,7 @@ p,
 }
 
 .projects {
-  width: 100vw;
+  width: 100%;
   max-width: var(--sections-max-width);
   margin: auto;
   display: flex;
@@ -214,7 +214,7 @@ h2,
 
 .projects__wrapper,
 .wrapper {
-  width: 100vw;
+  width: 100%;
   max-width: var(--wrapper-max-width);
   margin-bottom: 30px;
   display: grid;
@@ -325,7 +325,7 @@ button:active {
 }
 
 .about-me {
-  width: 100vw;
+  width: 100%;
   max-width: var(--sections-max-width);
 
   /* min-height: 720px; */
@@ -339,7 +339,7 @@ button:active {
 }
 
 .about-me__container {
-  width: 100vw;
+  width: 100%;
   max-width: var(--sections-max-width);
   display: flex;
   flex-direction: column;
