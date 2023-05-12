@@ -348,7 +348,7 @@ button:active {
   justify-content: center;
   background-image:
     url("./assets/about-left-mobile.png"),
-    url("./assets/about-right-mobile.svg");
+    url("./assets/about-right-mobile.png");
   background-repeat: no-repeat;
   background-size: 17%, 17%;
   background-position: bottom left, top right;
@@ -672,7 +672,7 @@ footer {
   button[type="submit"] {
     justify-content: flex-start;
     margin: 0 auto 15% 0;
-  }
+}
 
   .contact__container__email {
     display: none;
