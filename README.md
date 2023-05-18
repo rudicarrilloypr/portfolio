@@ -11,6 +11,7 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+- [👀 Sneak Peak Process](#sneak-peak)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -34,6 +35,9 @@
 
 
 **Portfolio** is the first personal portfolio developed by Rodolfo Carrillo Garcia as a Microverse Student
+
+### Sneak Peak Process  👀 <a name="sneak-peak"></a>
+https://www.loom.com/share/0d08cf016d534e72b641ad640c64bd5c
 
 ## 🛠 Built With <a name="built-with"></a>
 **HTML | CSS | Javascript**
