@@ -18,19 +18,24 @@
       <header>
         <div class="header">
         <ul>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#main">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <nav class="burger">
-          <div class="burger-line top"></div>
-          <div class="burger-line mid"></div>
-          <div class="burger-line bot"></div>
-        </nav>
-      </div>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </div> 
       </header>
     
+      <nav class ="mobile-nav">
+        <div id="close">&times;</div>
+      <a href="#main">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+
+      </nav>
 
   <!-------MAIN SECTION ------->
   <section id="main">
@@ -485,5 +490,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
