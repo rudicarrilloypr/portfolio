@@ -84,7 +84,7 @@ header ul {
 .hamburger {
   position: relative;
   display: block;
-  width: 35px;
+  width: 32px;
   height: 24px;
   cursor: pointer;
   appearance: none;
@@ -146,6 +146,14 @@ button a {
   font-size: 17px;
   line-height: 24px;
   color: var(--color-white);
+}
+
+#close {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  font-size: 45px;
+  left: 88.5%;
 }
 
 .mobile-nav a {
