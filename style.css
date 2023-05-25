@@ -526,8 +526,8 @@ button:active {
   text-align: justify;
   line-height: 24px;
   color: #344563;
-  margin-top: 1rem; /* Agrega un margen superior para separar del título */
-  font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+  margin-top: 1rem; 
+  font-size: 16px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
