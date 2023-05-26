@@ -133,6 +133,7 @@ function showPopup(project) {
   <li>CSS</li>
   <li>JavaScript</li>
 `;
+
   popupDescription.textContent = project.description;
   liveLinkButton.href = project.liveLink;
   sourceLinkButton.href = project.sourceLink;
