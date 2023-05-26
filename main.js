@@ -95,6 +95,7 @@ const projects = [
 
 const projectsWrapper = document.querySelector('.projects__wrapper');
 const popupWindow = document.getElementById('popup__window');
+const popupOverlay = document.getElementById('popup__overlay');
 const popupImage = document.getElementById('popup__image');
 const popupTitle = document.getElementById('popup__title');
 const popupTags = document.getElementById('popup__card__tags');
@@ -128,6 +129,7 @@ function createProjectCard(project) {
 function showPopup(project) {
   popupImage.src = project.imgMobile;
   popupTitle.textContent = project.popupTitle || project.name;
+  popupTags.classList.add('popup__tags');
   popupTags.innerHTML = `
   <li>Ruby on Rails</li>
   <li>CSS</li>
@@ -138,10 +140,15 @@ function showPopup(project) {
   liveLinkButton.href = project.liveLink;
   sourceLinkButton.href = project.sourceLink;
   popupWindow.style.display = 'flex';
+  popupOverlay.style.display = 'block';
+  document.body.classList.add('popup-open');
 }
 
 function hidePopup() {
   popupWindow.style.display = 'none';
+  popupOverlay.style.display = 'none';
+  document.body.classList.remove('popup-open');
+  popupTags.classList.remove('popup__tags');
 }
 
 projects.forEach((project) => {

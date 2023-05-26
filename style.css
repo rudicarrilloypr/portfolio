@@ -213,6 +213,8 @@ button a {
   background-color: #ebf0ee;
 }
 
+
+
 @media (min-width: 768px) {
   .mobile-nav {
     display: none;
@@ -418,9 +420,9 @@ h3,
 }
 
 .project__card__tags {
-  grid-area: tags;
+
   display: flex;
-  flex-wrap: wrap;
+
   gap: 4px;
   margin-top: 1rem;
   align-self: normal;
@@ -430,7 +432,7 @@ h3,
 .tags {
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
+
   justify-content: space-between;
   list-style: none;
   float: left;
@@ -483,16 +485,33 @@ button:active {
 
 /* PROJECTS POP-UP SECTION */
 
+body.popup-open {
+  overflow: hidden;
+}
+
+.popup__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Translucent black */
+  z-index: 98; /* Lower than the popup window */
+}
+
 .popup__window {
   box-sizing: border-box;
   display: none;
   position: fixed;
   top: 50%;
-  transform: translate(7%, -50%);
-  border-radius: 8px; /* Borde redondeado */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
   width: 90%;
   max-width: 920px;
-  max-height: 100vh;
+  height: 90%;
+  min-height: 300px;
   margin: 5% auto;
   padding: 24px;
   background: #fff;
@@ -501,6 +520,7 @@ button:active {
   z-index: 100;
   overflow-y: auto;
   overflow-x: hidden;
+  padding-bottom: 20px;
 }
 
 .popup__content__wrapper {
@@ -509,12 +529,19 @@ button:active {
   align-items: center;
   gap: 12px;
   width: 100%;
+  overflow-y: auto;
 }
 
 .popup__picture {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.popup__tags {
+  width: 100%;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
 .popup__title {
@@ -527,6 +554,7 @@ button:active {
   color: #172b4d;
   margin-bottom: 1rem;
   word-wrap: break-word;
+  margin-bottom: 8rem;
 }
 
 .popup__description {
@@ -547,27 +575,24 @@ button:active {
 .popup__buttons__container {
 
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+
   gap: 10px;
-  margin-top: 1rem;
+
 }
 
 .popup__button {
-  flex-basis: calc(50% - 5px);
+  
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 20px;
-  gap: 4px;
-  padding: 12px 16px;
+  justify-content: space-between;
+  min-width: 145px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
   background-color: var(--color-button-enabled);
   border-radius: 4px;
   color: var(--color-white);
   text-decoration: none;
-  
+  margin-bottom: 20px;
 }
 /* ----- ABOUT ME SECTION ----- */
 
@@ -657,6 +682,8 @@ button:active {
 
 .about-me__card__tags {
   width: 90%;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
 }
