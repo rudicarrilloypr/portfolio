@@ -195,3 +195,22 @@ desktopForm.addEventListener('submit', (event) => {
   // eslint-disable-next-line no-use-before-define
   validateEmail(event, 'email');
 });
+
+// Función para validar el correo electrónico
+function validateEmail(event, emailId) {
+  // Obtener el valor del campo de correo electrónico
+  const emailInput = document.getElementById(emailId);
+  const email = emailInput.value;
+
+  // Verificar si el correo electrónico está en minúsculas
+  if (email !== email.toLowerCase()) {
+    // Mostrar mensaje de error
+    const errorElement = document.createElement('p');
+    errorElement.classList.add('error-message');
+    errorElement.textContent = 'Please use lowercase letters';
+    emailInput.parentNode.insertBefore(errorElement, emailInput.nextSibling);
+
+    // Detener el envío del formulario
+    event.preventDefault();
+  }
+}
