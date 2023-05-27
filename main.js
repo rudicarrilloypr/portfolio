@@ -219,5 +219,3 @@ function saveFormData() {
 
   localStorage.setItem('formData', JSON.stringify(formData));
 }
-
-
