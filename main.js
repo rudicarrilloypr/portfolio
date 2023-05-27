@@ -177,3 +177,21 @@ projects.forEach((project) => {
 });
 
 closeButton.addEventListener('click', hidePopup);
+
+/* ———— contact validation ———— */
+
+// Obtener los formularios
+const mobileForm = document.querySelector('.contact__form.mobile__form');
+const desktopForm = document.querySelector('.contact__form.desktop__form');
+
+// Agregar evento de envío al formulario móvil
+mobileForm.addEventListener('submit', (event) => {
+  // eslint-disable-next-line no-use-before-define
+  validateEmail(event, 'email-mobile');
+});
+
+// Agregar evento de envío al formulario de escritorio
+desktopForm.addEventListener('submit', (event) => {
+  // eslint-disable-next-line no-use-before-define
+  validateEmail(event, 'email');
+});
