@@ -203,3 +203,21 @@ mobileForm.addEventListener('submit', (event) => {
 desktopForm.addEventListener('submit', (event) => {
   validateEmail(event, 'email');
 });
+
+/* ———— preserve data ———— */
+
+function saveFormData() {
+  const formData = {
+    fullName: document.getElementById('full-name').value,
+    emailMobile: document.getElementById('email-mobile').value,
+    messageMobile: document.getElementById('message-mobile').value,
+    firstName: document.getElementById('firstname').value,
+    lastName: document.getElementById('lastname').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
+
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+
