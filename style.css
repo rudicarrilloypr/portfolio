@@ -545,8 +545,8 @@ body.popup-open {
   line-height: 44px;
   text-align: left;
   color: #172b4d;
-  margin-bottom: 8rem;
   word-wrap: break-word;
+  margin-bottom: 8rem;
 }
 
 .popup__description {
@@ -1114,7 +1114,7 @@ footer {
     transform: translate(-50%, -50%);
     border-radius: 8px;
     width: 95%;
-    max-width: 776px;
+    max-width: 740px;
     height: 90%;
     min-height: 300px;
     margin: 0 auto 20px;
@@ -1129,6 +1129,10 @@ footer {
     max-height: 800px;
   }
 
+  .popup-content {
+    max-width: 735px;
+  }
+
   .popup__content__wrapper {
     display: flex;
     flex-direction: row;
@@ -1137,6 +1141,7 @@ footer {
     width: 100%;
     overflow-y: auto;
     margin-right: -15px;
+    max-width: 745px;
   }
 
   .popup__picture {
@@ -1149,6 +1154,7 @@ footer {
   .popup__picture img {
     max-height: 415px;
     width: 97%;
+    max-width: 745px;
   }
 
   .popup__tags {
@@ -1177,11 +1183,11 @@ footer {
     text-align: justify;
     line-height: 24px;
     color: #344563;
-    margin-top: 11rem;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     margin-bottom: 1rem;
+    margin-top: 11rem;
   }
 
   .popup__buttons__container {
@@ -1190,7 +1196,7 @@ footer {
     max-height: 60px;
     margin-right: 5%;
     margin-top: 10px;
-    margin-left: -15%;
+    margin-left: -2%;
   }
 
   .popup__button {
