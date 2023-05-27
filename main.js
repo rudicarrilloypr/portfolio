@@ -179,38 +179,27 @@ projects.forEach((project) => {
 closeButton.addEventListener('click', hidePopup);
 
 /* ———— contact validation ———— */
-
-// Obtener los formularios
 const mobileForm = document.querySelector('.contact__form.mobile__form');
 const desktopForm = document.querySelector('.contact__form.desktop__form');
 
-// Agregar evento de envío al formulario móvil
-mobileForm.addEventListener('submit', (event) => {
-  // eslint-disable-next-line no-use-before-define
-  validateEmail(event, 'email-mobile');
-});
-
-// Agregar evento de envío al formulario de escritorio
-desktopForm.addEventListener('submit', (event) => {
-  // eslint-disable-next-line no-use-before-define
-  validateEmail(event, 'email');
-});
-
-// Función para validar el correo electrónico
 function validateEmail(event, emailId) {
-  // Obtener el valor del campo de correo electrónico
   const emailInput = document.getElementById(emailId);
   const email = emailInput.value;
 
-  // Verificar si el correo electrónico está en minúsculas
   if (email !== email.toLowerCase()) {
-    // Mostrar mensaje de error
     const errorElement = document.createElement('p');
     errorElement.classList.add('error-message');
     errorElement.textContent = 'Please use lowercase letters';
     emailInput.parentNode.insertBefore(errorElement, emailInput.nextSibling);
 
-    // Detener el envío del formulario
     event.preventDefault();
   }
 }
+
+mobileForm.addEventListener('submit', (event) => {
+  validateEmail(event, 'email-mobile');
+});
+
+desktopForm.addEventListener('submit', (event) => {
+  validateEmail(event, 'email');
+});
