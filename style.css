@@ -213,8 +213,6 @@ button a {
   background-color: #ebf0ee;
 }
 
-
-
 @media (min-width: 768px) {
   .mobile-nav {
     display: none;
@@ -383,8 +381,7 @@ h2,
 }
 
 .popup__picture img {
-  width: 100%;
-  max-width: 910px;
+  width: 99%;
   height: 100%;
   border-radius: 8px;
 }
@@ -420,9 +417,7 @@ h3,
 }
 
 .project__card__tags {
-
   display: flex;
-
   gap: 4px;
   margin-top: 1rem;
   align-self: normal;
@@ -432,7 +427,6 @@ h3,
 .tags {
   width: 100%;
   display: flex;
-
   justify-content: space-between;
   list-style: none;
   float: left;
@@ -509,10 +503,10 @@ body.popup-open {
   transform: translate(-50%, -50%);
   border-radius: 8px;
   width: 90%;
-  max-width: 920px;
+  max-width: 1000px;
   height: 90%;
   min-height: 300px;
-  margin: 5% auto;
+  margin: 3% auto;
   padding: 24px;
   background: #fff;
   border: 1px solid #ebecf0;
@@ -545,43 +539,34 @@ body.popup-open {
 }
 
 .popup__title {
-
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   text-align: left;
   color: #172b4d;
-  margin-bottom: 1rem;
-  word-wrap: break-word;
   margin-bottom: 8rem;
+  word-wrap: break-word;
 }
 
 .popup__description {
-
   margin: 2rem 0 1rem 0;
   text-align: justify;
   line-height: 24px;
   color: #344563;
   margin-top: 1rem;
   font-size: 16px;
-
   font-style: normal;
   font-weight: 400;
-
   margin-bottom: 1rem;
 }
 
 .popup__buttons__container {
-
   display: flex;
-
   gap: 10px;
-
 }
 
 .popup__button {
-  
   display: flex;
   justify-content: space-between;
   min-width: 145px;
@@ -594,6 +579,7 @@ body.popup-open {
   text-decoration: none;
   margin-bottom: 20px;
 }
+
 /* ----- ABOUT ME SECTION ----- */
 
 #about {
@@ -670,11 +656,6 @@ body.popup-open {
   background: #fff;
   box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
-
-/* .about-me__icon__holder img {
-  /* height: 0%; */
-
-/* width: 10%;} */
 
 .about-me__card__title {
   margin-bottom: 10px;
@@ -1105,5 +1086,141 @@ footer {
 @media screen and (min-width: 1920px) {
   .main__container {
     transform: translateY(0%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body.popup-open {
+    overflow: hidden;
+  }
+
+  .popup__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Translucent black */
+    z-index: 98; /* Lower than the popup window */
+  }
+
+  .popup__window {
+    box-sizing: border-box;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    width: 95%;
+    max-width: 776px;
+    height: 90%;
+    min-height: 300px;
+    margin: 0 auto 20px;
+    padding: 0 10px;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    z-index: 100;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+    max-height: 800px;
+  }
+
+  .popup__content__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    overflow-y: auto;
+    margin-right: -15px;
+  }
+
+  .popup__picture {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 50px;
+  }
+
+  .popup__picture img {
+    max-height: 415px;
+    width: 97%;
+  }
+
+  .popup__tags {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-right: 300px;
+  }
+
+  .popup__title {
+    max-width: 450px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: left;
+    color: #172b4d;
+    margin-bottom: 5rem;
+    word-wrap: break-word;
+  }
+
+  .popup__description {
+    width: 145%;
+    max-width: none;
+    margin: 2rem 0 1rem 0;
+    text-align: justify;
+    line-height: 24px;
+    color: #344563;
+    margin-top: 11rem;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .popup__buttons__container {
+    display: flex;
+    gap: 10px;
+    max-height: 60px;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-left: -15%;
+  }
+
+  .popup__button {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px;
+    background-color: var(--color-button-enabled);
+    border-radius: 4px;
+    color: var(--color-white);
+    text-decoration: none;
+    margin-bottom: 20px;
+    min-width: 100px;
+    gap: 3px;
+  }
+
+  .desktop_popup {
+    display: flex;
+  }
+
+  .description_container {
+    max-width: 65%;
+  }
+
+  .popup__close__button {
+    margin-bottom: 20px;
+    background-color: rgb(212, 211, 211);
+    padding: 10px 20px;
+    border-radius: 8px;
+    height: 33px;
   }
 }

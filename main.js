@@ -127,14 +127,34 @@ function createProjectCard(project) {
 }
 
 function showPopup(project) {
-  popupImage.src = project.imgMobile;
+  const screenWidth = window.innerWidth;
+  if (screenWidth > 768) {
+    popupImage.src = project.imgDesktop;
+  } else {
+    popupImage.src = project.imgMobile;
+  }
   popupTitle.textContent = project.popupTitle || project.name;
   popupTags.classList.add('popup__tags');
-  popupTags.innerHTML = `
-  <li>Ruby on Rails</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-`;
+  let tagsHTML = '';
+
+  if (screenWidth < 768) {
+    tagsHTML = `
+      <li>Ruby on Rails</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    `;
+  } else {
+    tagsHTML = `
+      <li>Codekit</li>
+      <li>GitHub</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+      <li>Terminal</li>
+      <li>Codepen</li>
+    `;
+  }
+
+  popupTags.innerHTML = tagsHTML;
 
   popupDescription.textContent = project.description;
   liveLinkButton.href = project.liveLink;
