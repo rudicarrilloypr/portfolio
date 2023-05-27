@@ -177,3 +177,29 @@ projects.forEach((project) => {
 });
 
 closeButton.addEventListener('click', hidePopup);
+
+/* ———— contact validation ———— */
+const mobileForm = document.querySelector('.contact__form.mobile__form');
+const desktopForm = document.querySelector('.contact__form.desktop__form');
+
+function validateEmail(event, emailId) {
+  const emailInput = document.getElementById(emailId);
+  const email = emailInput.value;
+
+  if (email !== email.toLowerCase()) {
+    const errorElement = document.createElement('p');
+    errorElement.classList.add('error-message');
+    errorElement.textContent = 'Please use lowercase letters';
+    emailInput.parentNode.insertBefore(errorElement, emailInput.nextSibling);
+
+    event.preventDefault();
+  }
+}
+
+mobileForm.addEventListener('submit', (event) => {
+  validateEmail(event, 'email-mobile');
+});
+
+desktopForm.addEventListener('submit', (event) => {
+  validateEmail(event, 'email');
+});
