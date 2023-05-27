@@ -203,3 +203,56 @@ mobileForm.addEventListener('submit', (event) => {
 desktopForm.addEventListener('submit', (event) => {
   validateEmail(event, 'email');
 });
+
+/* ———— preserve data ———— */
+
+function saveFormData() {
+  const formData = {
+    fullName: document.getElementById('full-name').value,
+    emailMobile: document.getElementById('email-mobile').value,
+    messageMobile: document.getElementById('message-mobile').value,
+    firstName: document.getElementById('firstname').value,
+    lastName: document.getElementById('lastname').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
+
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+function loadFormData() {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+
+  if (formData) {
+    if (formData.fullName) {
+      document.getElementById('full-name').value = formData.fullName;
+    }
+    if (formData.emailMobile) {
+      document.getElementById('email-mobile').value = formData.emailMobile;
+    }
+    if (formData.messageMobile) {
+      document.getElementById('message-mobile').value = formData.messageMobile;
+    }
+    if (formData.firstName) {
+      document.getElementById('firstname').value = formData.firstName;
+    }
+    if (formData.lastName) {
+      document.getElementById('lastname').value = formData.lastName;
+    }
+    if (formData.email) {
+      document.getElementById('email').value = formData.email;
+    }
+    if (formData.message) {
+      document.getElementById('message').value = formData.message;
+    }
+  }
+}
+
+document.getElementById('full-name').addEventListener('input', saveFormData);
+document.getElementById('email-mobile').addEventListener('input', saveFormData);
+document.getElementById('message-mobile').addEventListener('input', saveFormData);
+document.getElementById('firstname').addEventListener('input', saveFormData);
+document.getElementById('lastname').addEventListener('input', saveFormData);
+document.getElementById('email').addEventListener('input', saveFormData);
+document.getElementById('message').addEventListener('input', saveFormData);
+
+window.addEventListener('load', loadFormData);
