@@ -128,16 +128,22 @@ Running tests not required
 
 To deploy use your favorite method
 
+### Online Version 
+
+https://rudicarrilloypr.github.io/main.html
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Rudi Carrillo**
+> by Rodolfo Carrillo
+
+👤 **Rodolfo Carrillo**
 
 - GitHub: [@rudicarrilloypr](https://github.com/rudicarrilloypr)
-- Twitter: [@__rudicarrillo](https://twitter.com/__rudicarrillo)
-- Instagram: [@_rudicarrillo](https://www.instagram.com/_rudicarrillo/)
-- LinkedIn: [Rudi Carrillo](https://www.linkedin.com/in/rudi-carrillo/)
+- Twitter: [@onlyargo](https://twitter.com/onlyargo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/rudi-carrillo/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
