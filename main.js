@@ -35,29 +35,38 @@ menuLinks.forEach((menuLink) => {
 /* -------------------- POPUP ----------------------*/
 const projects = [
   {
-    name: 'Multi-Post Stories Gain+Glory',
-    imgMobile: './assets/Snapshoot-mobile.png',
-    imgDesktop: './assets/Snapshoot-desktop.png',
-    techTags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    liveLink: 'https://example.com/project1',
-    sourceLink: 'https://github.com/user/project1',
+    name: 'To-Do List App',
+    imgMobile: './assets/todo.png',
+    imgDesktop: './assets/todo.png',
+    techTags: ['CSS', 'JavaScript', 'HTML', 'Webpack'],
+    liveLink: 'https://rudicarrilloypr.github.io/todo-list/dist/',
+    sourceLink: 'https://github.com/rudicarrilloypr/todo-list',
     // eslint-disable-next-line no-multi-str
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.\n\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    popupTitle: 'Keeping track of hundreds of components',
+    description: 'an aesthetic basic To-Do List project',
+    popupTitle: 'To-Do List',
   }, {
-    name: 'Multi-Post Stories Gain+Glory',
-    imgMobile: './assets/Snapshoot-mobile.png',
-    imgDesktop: './assets/Snapshoot-desktop.png',
-    techTags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    liveLink: 'https://example.com/project1',
-    sourceLink: 'https://github.com/user/project1',
+    name: 'R&B Music<br/>World Tour 2023',
+    imgMobile: './assets/capstone.png',
+    imgDesktop: './assets/capstone.png',
+    techTags: ['CSS', 'JavaScript', 'HTML', 'Github Pages'],
+    liveLink: 'https://rudicarrilloypr.github.io/capstone-module-1/main.html',
+    sourceLink: 'https://github.com/rudicarrilloypr/capstone-module-1',
     // eslint-disable-next-line no-multi-str
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    popupTitle: 'Keeping track of hundreds of components',
+    description: 'The R&B Music World Tour is an annual three-day outdoor music festival that features national and international Rythm & Blues, Jazz, soul artists and emerging talents.',
+    popupTitle: 'R&B Music World Tour ',
+  }, {
+    name: 'Awesome Books App',
+    imgMobile: './assets/addbooks.png',
+    imgDesktop: './assets/addbooks.png',
+    techTags: ['ES6', 'CSS', 'JavaScript', 'HTML'],
+    liveLink: 'https://rudicarrilloypr.github.io/awesome-books-es6/',
+    sourceLink: 'https://github.com/rudicarrilloypr/awesome-books-es6',
+    description: 'basic website that allows users to add/remove books from a list.',
+    popupTitle: 'Awesome Books App',
   }, {
     name: 'Multi-Post Stories Gain+Glory',
-    imgMobile: './assets/Snapshoot-mobile.png',
-    imgDesktop: './assets/Snapshoot-desktop.png',
+    imgMobile: './assets/photographer2.png',
+    imgDesktop: './assets/photographer2.png',
     techTags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     liveLink: 'https://example.com/project1',
     sourceLink: 'https://github.com/user/project1',
@@ -65,8 +74,8 @@ const projects = [
     popupTitle: 'Keeping track of hundreds of components',
   }, {
     name: 'Multi-Post Stories Gain+Glory',
-    imgMobile: './assets/Snapshoot-mobile.png',
-    imgDesktop: './assets/Snapshoot-desktop.png',
+    imgMobile: './assets/photographer1.png',
+    imgDesktop: './assets/photographer1.png',
     techTags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     liveLink: 'https://example.com/project1',
     sourceLink: 'https://github.com/user/project1',
@@ -74,17 +83,8 @@ const projects = [
     popupTitle: 'Keeping track of hundreds of components',
   }, {
     name: 'Multi-Post Stories Gain+Glory',
-    imgMobile: './assets/Snapshoot-mobile.png',
-    imgDesktop: './assets/Snapshoot-desktop.png',
-    techTags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    liveLink: 'https://example.com/project1',
-    sourceLink: 'https://github.com/user/project1',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    popupTitle: 'Keeping track of hundreds of components',
-  }, {
-    name: 'Multi-Post Stories Gain+Glory',
-    imgMobile: './assets/Snapshoot-mobile.png',
-    imgDesktop: './assets/Snapshoot-desktop.png',
+    imgMobile: './assets/producer1.png',
+    imgDesktop: './assets/producer1.png',
     techTags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     liveLink: 'https://example.com/project1',
     sourceLink: 'https://github.com/user/project1',
@@ -115,7 +115,7 @@ function createProjectCard(project) {
             </ul>
             <button class="project__card__button" type="button">See project</button>
           </div>
-          <img src="${project.imgMobile}" alt="${project.name}" class="project__card__image">
+          <img src="${project.imgDesktop}" alt="${project.name}" class="project__card__image">
         `;
 
   card.querySelector('.project__card__button').addEventListener('click', () => {
@@ -139,18 +139,19 @@ function showPopup(project) {
 
   if (screenWidth < 768) {
     tagsHTML = `
-      <li>Ruby on Rails</li>
+      <li>HTML</li>
       <li>CSS</li>
       <li>JavaScript</li>
+      <li>Webpack</li>
     `;
   } else {
     tagsHTML = `
-      <li>Codekit</li>
+      <li>HTML</li>
       <li>GitHub</li>
       <li>JavaScript</li>
-      <li>Bootstrap</li>
+      <li>CSS</li>
       <li>Terminal</li>
-      <li>Codepen</li>
+      <li>WebPack</li>
     `;
   }
 

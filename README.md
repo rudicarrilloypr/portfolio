@@ -1,8 +1,10 @@
 <a name="readme-top"></a>
 
-
-
 <div align="center">
+
+   <img src="./assets/rc-sd-logo.PNG" alt="Rudi Carrillo logo" width="140"  height="auto" />
+  <br/>
+
   <h1><b>README File</b></h3>
 </div>
 
@@ -12,6 +14,7 @@
 
 - [📖 About the Project](#about-project)
 - [👀 Sneak Peak Process](#sneak-peak)
+ - [🚀 Live Demo](#live-demo)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -37,15 +40,28 @@
 
 **Portfolio** is the first personal portfolio developed by Rodolfo Carrillo Garcia as a Microverse Student
 
-### Sneak Peak Process  👀 <a name="sneak-peak"></a>
+## 👀  Sneak Peak Process <a name="sneak-peak"></a>
 https://www.loom.com/share/0d08cf016d534e72b641ad640c64bd5c
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+[Click here](https://rudicarrilloypr.github.io/portfolio/main.html) to see the project's deployment on GitHub pages.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🛠 Built With <a name="built-with"></a>
-**HTML | CSS | Javascript**
-### Tech Stack <a name="tech-stack"></a>
 
-> - HTML, Git, CSS
+- HTML 
+- CSS
+- Javascript
 
+## Tech Stack <a name="tech-stack"></a>
+
+> - HTML
+> - Git
+> - SS
+
+### Details
 <details>
   <summary>HTML</summary>
   <ul>
@@ -133,9 +149,9 @@ https://rudicarrilloypr.github.io/main.html
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Use of GitFlow**
-- [ ] **Linters**
-- [ ] **README File**
+- [ ] **original projects**
+- [ ] **Deployment live demo**
+- [ ] **Fix design issues**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -153,7 +169,7 @@ Feel free to check the [issues page](../../issues/).
 
 
 
-I would like to thank Microverse
+I would like to thank Microverse, for showing me the path to develop my skills and passion for software development
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -377,7 +377,9 @@ h2,
 }
 
 .project__card__image {
-  display: none;
+  display: block;
+  width: 100%;
+  height: 250px;
 }
 
 .popup__picture img {
@@ -546,7 +548,6 @@ body.popup-open {
   text-align: left;
   color: #172b4d;
   word-wrap: break-word;
-  margin-bottom: 8rem;
 }
 
 .popup__description {
