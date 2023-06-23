@@ -45,7 +45,7 @@ const projects = [
     description: 'an aesthetic basic To-Do List project',
     popupTitle: 'To-Do List',
   }, {
-    name: 'R&B Music World Tour 2023',
+    name: 'R&B Music<br/>World Tour 2023',
     imgMobile: './assets/capstone.png',
     imgDesktop: './assets/capstone.png',
     techTags: ['CSS', 'JavaScript', 'HTML', 'Github Pages'],
@@ -65,8 +65,8 @@ const projects = [
     popupTitle: 'Awesome Books App',
   }, {
     name: 'Multi-Post Stories Gain+Glory',
-    imgMobile: './assets/Snapshoot-mobile.png',
-    imgDesktop: './assets/Snapshoot-desktop.png',
+    imgMobile: './assets/photographer2.png',
+    imgDesktop: './assets/photographer2.png',
     techTags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     liveLink: 'https://example.com/project1',
     sourceLink: 'https://github.com/user/project1',
@@ -74,8 +74,8 @@ const projects = [
     popupTitle: 'Keeping track of hundreds of components',
   }, {
     name: 'Multi-Post Stories Gain+Glory',
-    imgMobile: './assets/Snapshoot-mobile.png',
-    imgDesktop: './assets/Snapshoot-desktop.png',
+    imgMobile: './assets/photographer1.png',
+    imgDesktop: './assets/photographer1.png',
     techTags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     liveLink: 'https://example.com/project1',
     sourceLink: 'https://github.com/user/project1',
@@ -83,8 +83,8 @@ const projects = [
     popupTitle: 'Keeping track of hundreds of components',
   }, {
     name: 'Multi-Post Stories Gain+Glory',
-    imgMobile: './assets/Snapshoot-mobile.png',
-    imgDesktop: './assets/Snapshoot-desktop.png',
+    imgMobile: './assets/producer1.png',
+    imgDesktop: './assets/producer1.png',
     techTags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     liveLink: 'https://example.com/project1',
     sourceLink: 'https://github.com/user/project1',

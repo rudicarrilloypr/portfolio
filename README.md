@@ -1,8 +1,10 @@
 <a name="readme-top"></a>
 
-
-
 <div align="center">
+
+   <img src="./assets/rc-sd-logo.PNG" alt="Rudi Carrillo logo" width="140"  height="auto" />
+  <br/>
+
   <h1><b>README File</b></h3>
 </div>
 
