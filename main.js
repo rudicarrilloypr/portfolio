@@ -35,7 +35,7 @@ menuLinks.forEach((menuLink) => {
 /* -------------------- POPUP ----------------------*/
 const projects = [
   {
-    name: 'To-Do List',
+    name: 'To-Do List App',
     imgMobile: './assets/todo.png',
     imgDesktop: './assets/todo.png',
     techTags: ['CSS', 'JavaScript', 'HTML', 'Webpack'],
