@@ -5,7 +5,8 @@
    <img src="./assets/rc-sd-logo.PNG" alt="Rudi Carrillo logo" width="140"  height="auto" />
   <br/>
 
-  <h1><b>README File</b></h3>
+ <h1><b>💼 Rudi Carrillo's portfolio</b></h1>
+  <h2><b>README File</b></h2>
 </div>
 
 <!-- TABLE OF CONTENTS -->
