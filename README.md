@@ -2,7 +2,7 @@
 
 <div align="center">
 
-   <img src="./assets/rc-sd-logo.PNG" alt="Rudi Carrillo logo" width="140"  height="auto" />
+   <img src="./assets/rc-softdev-banner-doodles-soft.png" alt="Rudi Carrillo logo" height="auto" />
   <br/>
 
  <h1><b>💼 Rudi Carrillo's portfolio</b></h1>
