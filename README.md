@@ -143,8 +143,8 @@ To deploy use your favorite method
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **original projects**
-- [ ] **Deployment live demo**
+- [x] **original projects**
+- [x] **Deployment live demo**
 - [ ] **Fix design issues**
 
 
