@@ -35,6 +35,15 @@ menuLinks.forEach((menuLink) => {
 /* -------------------- POPUP ----------------------*/
 const projects = [
   {
+    name: 'Fortnite New Cosmetics App',
+    imgMobile: './assets/fortnite-api-app.pg.png',
+    imgDesktop: './assets/fortnite-api-app.pg.png',
+    techTags: ['Fortnite API', 'CSS', 'JavaScript', 'HTML'],
+    liveLink: 'https://fortnite-api-new.netlify.app/',
+    sourceLink: 'https://github.com/rudicarrilloypr/fortnite-api',
+    description: 'Webb app that recieve updated data from the official Fortnite API and shows the upcoming cosmetics coming to the game',
+    popupTitle: 'Fortnite New Cosmetics App',
+  }, {
     name: 'To-Do List App',
     imgMobile: './assets/todo.png',
     imgDesktop: './assets/todo.png',
@@ -81,15 +90,6 @@ const projects = [
     sourceLink: 'https://github.com/rudicarrilloypr/kanban-capstone-js-module2/tree/main',
     description: 'Capstone web application that sends and recieve Data from the Pokemon API',
     popupTitle: 'My Pokedex App',
-  }, {
-    name: 'Multi-Post Stories Gain+Glory',
-    imgMobile: './assets/producer1.png',
-    imgDesktop: './assets/producer1.png',
-    techTags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    liveLink: 'https://example.com/project1',
-    sourceLink: 'https://github.com/user/project1',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    popupTitle: 'Keeping track of hundreds of components',
   },
 ];
 
